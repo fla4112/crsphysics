@@ -107,7 +107,26 @@ PAf_mag= math.sqrt(PA_f[0]**2 + PA_f[1]**2 + PA_f[2]**2)
 print("Q23: ", PAf_mag)
 
 #Q24 TA after
-TA_f= PAf_mag**2/(2*mA)
+TA_f= (PAf_mag**2)/(2*mA)
 print("Q24: ", TA_f)
 
+#Q25
+PB_f= [6,-6,0] #Q16-18
+PBf_mag= math.sqrt(PB_f[0]**2 + PB_f[1]**2 + PB_f[2]**2)
+print("Q25: ", PBf_mag)
 
+#Q26 TA after
+TB_f= (PBf_mag**2)/(2*mB)
+print("Q26: ", TB_f)
+
+#Q27 KEtotal initial
+KEtot_i= TA_i + TB_i
+print("Q27: ", KEtot_i)
+
+#Q28 KEtotal final
+KEtot_f= TA_f + TB_f
+print("Q28: ", KEtot_f)
+
+#Q30 dKE
+dKE= KEtot_i - KEtot_f
+print("Q30: ", dKE)
